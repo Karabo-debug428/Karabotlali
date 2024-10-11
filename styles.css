@@ -1,0 +1,393 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+    color: royalblue;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 20px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0; }
+}
+
+.slide {
+    width: 100%;
+    transition: 0.6s;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.text {
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    margin: 0 5px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+.navigation-auto {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+.featured-adventures {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.featured-adventures h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #ff5722;
+    margin-bottom: 30px;
+}
+
+.adventure-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destination-card h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.destination-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.destination-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.destination-card a:h over {
+    background-color: #e64a19;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    color: royalblue;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+video, audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.destination-list {
+    text-align: center;
+    padding: 20px;
+}
+
+.destination-list h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.destination-item {
+    background-color: white;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destination-item h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.destination-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.destination-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.destination-item a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+    color: #006064;
+}
+
+.about-us h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.our-team {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 36px;
+    color: #00796b;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #00796b;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+}
+
+

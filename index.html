@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure travels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="images/aviation1.jpg" alt="Adventure Travels"style="width:80px""height:80px">
+            </div>
+            <form action="#" method="get" class="search-bar">
+            <input type="text" placeholder="Search destinations..." name="search" required>
+            <button type="submit">Search</button>
+            </form> 
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome">
+        <h1>Welcome To Adventure Travels</h1>
+        <p>Your ultimate guide to exploring the most beautiful travel destinations around the globe.</p>
+        <p>Our purpose is to inspire travelers to embark on their next adventure with confidence and excitement.</p>
+    </section>
+
+    <section class="carousel">
+        <div class="slideshow">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="images/Bali1.jpg" alt="Bali, Indonesia">
+                    <div class="text">Bali, Indonesia</div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/Alaska2.jpg" alt="Alaska, USA">
+                    <div class="text">Alaska, USA</div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/Disney3.jpg" alt="Florida, USA">
+                    <div class="text">Florida, USA</div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/Greece4.jpg" alt="Southeast, Europe">
+                    <div class="text">Southeast, Europe</div>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-adventures">
+        <h2>Other Adventurous Destinations</h2>
+        <div class="adventure-grid">
+            <div class="destination-card">
+                <img src="images/everest.jpg" alt="Destination 1">
+                <h3>Mount Everest Base Camp, Nepal</h3>
+                <p>Experience the ultimate trekking adventure in the Himalayas.</p>
+                <p><strong>Cost:</strong> $1,500 - $3,000</p>
+                <p><strong>Hotels:</strong> Everest View Hotel, Namche Lodge</p>
+                <a href="https://www.example.com/everest" target="_blank">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="images/safari.jpeg" alt="Destination 2">
+                <h3>Safari in Kenya</h3>
+                <p>Explore the vast savannas and see wildlife in its natural habitat.</p>
+                <p><strong>Cost:</strong> $2,000 - $4,500</p>
+                <p><strong>Hotels:</strong> Maasai Mara Lodge, Safari Park Hotel</p>
+                <a href="https://www.example.com/kenya" target="_blank">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="images/australia.jpg" alt="Destination 3">
+                <h3>Great Barrier Reef, Australia</h3>
+                <p>Dive into the world’s largest coral reef system.</p>
+                <p><strong>Cost:</strong> $1,200 - $3,800</p>
+                <p><strong>Hotels:</strong> Reef View Hotel, Coral Cove</p>
+                <a href="https://www.example.com/australia" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adventure Travels. All rights reserved.</p>
+    </footer>
+</body>
+</html>
